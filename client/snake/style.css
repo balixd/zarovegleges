@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.body{
+    background: url("lilabg2.png");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#background{
+    background-image: url("feherbg.jpg");
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    border: 1px solid plum;
+}
+.snake {
+    background: linear-gradient(rgb(2, 48, 13), rgba(1, 114, 29, 0.603));
+    border: 3px solid white;
+}
+.food{
+   
+    background-image: url("feher.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  
+ 
+}
+.head{
+    background: linear-gradient(rgb(0,202,51), rgb(8,70,3));
+    transform: scale(1.02);
+}
+#scorebox{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    font-size: 60px;
+    color: rgb(175, 65, 164);
+    font-weight: bold;
+    text-shadow: 2px 2px plum;
+}
+#high{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    font-size: 60px;
+    color: rgb(175, 65, 164);
+    font-weight: bold;
+    text-shadow: 2px 2px plum;
+}
+#rekord{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    font-size: 60px;
+    color: rgb(175, 65, 164);
+    font-weight: bold;
+    text-shadow: 2px 2px plum;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Snake</title>
+
+</head>
+
+<body>
+
+    <div class="body">
+
+    <div id="scorebox"></div>
+
+    <div id="rekord">Rekord:</div>
+    <div id="high"></div>
+
+
+    <div id="background"></div>
+
+    </div>
+
+ </div>
+
+ 
+
+    <script src="script.js"></script>
+
+    <script src="../fetchdata.js"></script>
+
+ 
+
+    <script>
+
+         getdata("../../server/snakehighscore.php",renderOot);
+
+        function renderOot(data){
+
+            console.log(data);
+
+            let Str=""
+
+            for(let obj of data){
+
+                Str+=`
+
+                <p>
+
+
+                    <span>${obj.username}:</span>
+
+                    <span>${obj.score}</span>
+
+                </p>
+
+                    `
+
+            }
+
+            document.querySelector('#high').innerHTML = Str;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "loginout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkjelszo.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}

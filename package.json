@@ -1,0 +1,21 @@
+{
+  "name": "zaroo",
+  "version": "1.0.0",
+  "description": "Verziókezelés:\r - PAT\r - git init\r - git status\r - git add .\r - git coomit -m \"first\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://token@github.com/balixd/zaroo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balixd/zaroo/issues"
+  },
+  "homepage": "https://github.com/balixd/zaroo#readme",
+  "dependencies": {}
+}
